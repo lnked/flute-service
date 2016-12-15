@@ -8,7 +8,11 @@
 	<div class="layout-header__wrapper">
 		
 		<a href="#" class="layout-header__logo logo" rel="home" itemprop="url" accesskey="1" data-instant>
-			<span itemprop="name">Интернет-магазин Flute service</span>
+			<meta itemprop="name" content="Интернет-магазин Flute service">
+			
+			<svg class="logo__image" role="image">
+			    <use xlink:href="#logo"/>
+			</svg>
 		</a>
 
 		@@include('./_navigation.html', {

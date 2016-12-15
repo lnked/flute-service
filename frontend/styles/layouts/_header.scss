@@ -10,6 +10,9 @@
     }
 
     &__logo {
+        width: 157px;
+        height: 53px;
+        color: $c-header-logo;
         position: absolute;
         left: $layout-margin;
         top: 100px;

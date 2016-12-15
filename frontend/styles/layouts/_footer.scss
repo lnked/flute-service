@@ -10,13 +10,13 @@
     }
 
     &__logo {
-        width: 100px;
-        height: 33px;
+        width: 119px;
+        height: 40px;
+        color: $c-footer-logo;
         display: block;
         position: absolute;
         top: 50px;
         left: $layout-margin;
-        background: url(../images/logo-footer.png) 50% 50% no-repeat;
     }
     
     &__offer {

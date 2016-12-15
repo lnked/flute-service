@@ -13,67 +13,23 @@
     <meta content="address=no" name="format-detection">
     <meta content="telephone=no" name="format-detection">
 
-    <link rel="stylesheet" href="../css/main.min.css" media="none" onload="if(media!='all')media='all'">
-    <noscript><link rel="stylesheet" href="../css/main.min.css"></noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     
-    <script>
-    var errors = [];
-    // window.onerror = function(errorMsg, url, lineNumber, column, errorObj) {
-    //     var data = {};
-    //     data.url = document.location.protocol + "//" + document.location.hostname + document.location.pathname + document.location.search + " [referrer: " + document.referrer + "]";
-    //     data.method = "GET";
-    //     if (window.currentUser && window.currentUser.id) {
-    //         data.user = window.currentUser.id;
-    //     }
-    //     var navigatorFields = ["userAgent", "appCodeName", "appName", "appVersion", "platform", "product"];
-    //     for (var i = 0; i < navigatorFields.length; i++) {
-    //         data[navigatorFields[i]] = window.navigator[navigatorFields[i]];
-    //     }
-    //     data.date = new Date().getTime();
-    //     data.message = errorMsg;
-    //     if (url) {
-    //         data.script = url;
-    //     }
-    //     if (lineNumber) {
-    //         data.line = lineNumber;
-    //     }
-    //     if (column) {
-    //         data.column = column;
-    //     }
-    //     if (errorObj) {
-    //         data.stack = errorObj;
-    //     }
-    //     var s = "{";
-    //     var i = 0;
-    //     for (var f in data) {
-    //         if (i > 0) {
-    //             s += ',';
-    //         }
-    //         s += '"' + f + '":"' + data[f] + '"';
-    //         i += 1;
-    //     }
-    //     s += "}";
-    //     errors.push(s);
-    // }
-    // setInterval(function() {
-    //     if (errors.length > 0 && window.$) {
-    //         var data = {};
-    //         for (var i = 0; i < errors.length; i++) {
-    //             data["error" + i] = errors[i];
-    //         }
-    //         $.post("//s.stoloto.ru/service/private/errors", data);
-    //         errors = [];
-    //     }
-    // }, 1000);
-    </script>
-
+    <link rel="stylesheet" href="../css/main.min.css">
+    
     <!--[if IEMobile]>
         <meta http-equiv="cleartype" content="on">
         <meta http-equiv="imagetoolbar" content="false">
     <![endif]-->
 
     <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
-    <script>if (window.jQuery === undefined){window.jQueryReadyHandlers = [];window.$ = window.jQuery = function(cb){window.jQueryReadyHandlers.push(cb);return window.$;};window.$.ready = window.$;}</script>
+
     <title itemprop="name">@@title</title>
 </head>
 <body@@if (typeof(bodyclass) !== 'undefined' && bodyclass !== ''){ class="@@bodyclass"}>
