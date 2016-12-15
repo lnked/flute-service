@@ -1,0 +1,41 @@
+.layout-header {
+    clear: both;
+    padding: 12px 0;
+    position: relative;
+    height: $header-height;
+    background-color: $c-white;
+
+    &__wrapper {
+        @extend %layout;
+    }
+
+    &__logo {
+        position: absolute;
+        left: $layout-margin;
+        top: 100px;
+    }
+
+    &__slogon {
+        color: $c-tolopea;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+    }
+
+    &__contact {
+        position: absolute;
+        right: $layout-margin;
+        bottom: 27px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}
