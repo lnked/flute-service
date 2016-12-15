@@ -1,34 +1,25 @@
 .button {
-    height: 48px;
-    padding: 0 42px;
-    
-    color: #fff;
+    height: 53px;
+    color: $c-white;
+    padding: 0 40px;
     font-size: 1.6rem;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 55px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-
+    background-color: $c-radical-red;
+    border-radius: 26px;
     @extend %button;
-
-    border: 0;
-    border-radius: 5px;
-    background-color: #f6171e;
-    box-shadow: 0 2px 0 0 #ae0005;
-
-    &:visited {
-        color: #fff;
-    }
 
     &_submit {
         display: inline-block;
         vertical-align: middle;
     }
 
-    &:hover, &:focus {
-        color: #fff;
-        background-color: darken(#f6171e, 10%);
+    &:hover {
+        // color: #fff;
+        // background-color: darken(#f6171e, 10%);
     }
 
     &.disabled {

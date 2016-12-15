@@ -1,0 +1,61 @@
+.promo {
+    clear: both;
+    padding-top: 95px;
+    padding-bottom: $footer-margin;
+    background: $c-mardi-gras url(../images/fruits-background.png) 50% 50% no-repeat;
+
+    &__player {
+        width: 100%;
+        max-width: 742px;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 35px;
+        background: url(../images/player.png) 50% 50% no-repeat;
+    
+        &:before {
+            width: 100%;
+            content: "";
+            display: block;
+            padding-top: 67.7897574124%;
+        }
+
+        &__video {
+            position: absolute;
+            left: 74px;
+            top: 17px;
+            right: 79px;
+            bottom: 17px;
+            cursor: pointer;
+        }
+
+        &__play-button {
+            width: 88px;
+            height: 88px;
+            color: $c-bossanova2;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            display: block;
+            margin-top: -44px;
+            margin-left: -44px;
+
+            &__icon {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+
+    &__sub-title {
+        color: $c-white;
+        font-size: 2rem;
+        font-style: italic;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    &__button {
+        text-align: center;
+    }
+}
