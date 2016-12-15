@@ -1,6 +1,14 @@
 .contact {
     text-align: right;
-        
+
+    &__ico {
+        width: 27px;
+        height: 26px;
+        position: absolute;
+        left: 3px;
+        top: 14px;
+    }
+
     &__phone {
         color: $c-tolopea;
         display: block;

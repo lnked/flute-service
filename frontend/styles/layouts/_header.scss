@@ -1,12 +1,12 @@
 .layout-header {
     clear: both;
-    padding: 12px 0;
     position: relative;
     height: $header-height;
     background-color: $c-white;
 
     &__wrapper {
         @extend %layout;
+        padding: 12px $layout-margin;
     }
 
     &__logo {
@@ -21,12 +21,15 @@
         font-weight: 700;
         line-height: 2.4rem;
         text-transform: uppercase;
+        position: absolute;
+        top: 115px;
+        left: 205px + $layout-margin;
     }
 
     &__contact {
         position: absolute;
         right: $layout-margin;
-        bottom: 27px;
+        top: 95px;
     }
 }
 
