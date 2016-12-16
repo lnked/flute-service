@@ -48,3 +48,33 @@
         dd {}
     }
 }
+
+@media only screen and (max-width: 960px) {
+    .projects__x {
+        &._x1,
+        &._x2 {
+            width: 50%;
+
+            &:before {
+                padding-bottom: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .projects__x {
+        &._x1,
+        &._x2 {
+            width: 100%;
+
+            &:before {
+                padding-bottom: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

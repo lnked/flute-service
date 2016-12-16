@@ -12,14 +12,9 @@
     border-radius: 26px;
     @extend %button;
 
-    &_submit {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
     &:hover {
-        // color: #fff;
-        // background-color: darken(#f6171e, 10%);
+        color: $c-radical-red;
+        background-color: $c-white;
     }
 
     &.disabled {

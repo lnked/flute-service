@@ -22,7 +22,7 @@
         color: $c-tolopea;
         font-size: 1.8rem;
         font-weight: 700;
-        line-height: 2.4rem;
+        line-height: 1.3333333333;
         text-transform: uppercase;
         position: absolute;
         top: 115px;
@@ -36,12 +36,86 @@
     }
 }
 
-@media only screen and (max-width: 1280px) {}
-@media only screen and (max-width: 1140px) {}
-@media only screen and (max-width: 1024px) {}
-@media only screen and (max-width: 960px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 960px) {
+    .layout-header {
+        height: auto;
+        
+        &__wrapper {
+            padding: 20px 15px;
+        }
+
+        &__logo {
+            position: relative;
+            left: auto;
+            top: auto;
+            margin-bottom: 25px;
+        }
+
+        &__navigation {
+            margin-bottom: 25px;
+        }
+    
+        &__contact {
+            right: 15px;
+        }
+
+        &__slogon {
+            clear: both;
+            position: relative;
+            left: auto;
+            top: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 868px) {
+    .layout-header {
+        &__contact {
+            top: 55px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .layout-header {
+        &__contact {
+            position: relative;
+            right: auto;
+            top: auto;
+        }
+
+        &__slogon {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .layout-header {
+        text-align: center;
+
+        &__logo {
+            margin: 0 auto 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .layout-header {
+        text-align: center;
+
+        &__slogon {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .layout-header {
+        &__logo {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
 @media only screen and (max-width: 320px) {}

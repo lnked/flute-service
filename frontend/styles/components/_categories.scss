@@ -24,10 +24,13 @@
             border-radius: 39px;
             display: inline-block;
             text-decoration: none;
+            position: relative;
+            top: -1px;
             border: 2px solid $c-radical-red;
             transition: border-color $a-time, color $a-time;
 
-            &:hover {
+            &:hover,
+            &.is-current {
                 color: $c-white;
                 border-color: $c-white;
             }
@@ -49,7 +52,7 @@
             display: block;
             text-align: center;
             line-height: 41px;
-            margin-bottom: 2px;
+            margin-bottom: 3px;
 
             &__svg {
                 width: 41px;
@@ -77,3 +80,31 @@
         }
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .categories {
+        &__item {
+            &:first-child {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .categories {
+        margin-bottom: 10px;
+
+        &__item {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

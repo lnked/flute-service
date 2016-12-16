@@ -54,8 +54,42 @@
 @media only screen and (max-width: 1140px) {}
 @media only screen and (max-width: 1024px) {}
 @media only screen and (max-width: 960px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 768px) {
+    .layout-footer {
+        height: auto;
+        margin-top: 0;
+        padding: 25px 0;
+
+        &__logo,
+        &__offer,
+        &__copiright {
+            position: relative;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: auto;
+            line-height: 1;
+            
+            &:not(:last-child) {
+                margin-bottom: 20px;    
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .layout-footer {
+        text-align: center;
+
+        br {
+            display: none;
+        }
+
+        &__logo {
+            margin: 0 auto 20px;
+        }
+    }
+}
 @media only screen and (max-width: 375px) {}
 @media only screen and (max-width: 320px) {}

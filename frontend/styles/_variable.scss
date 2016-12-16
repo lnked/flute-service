@@ -1,6 +1,6 @@
 // Animation
-$a-time:                        .3s;
-$a-micro-time:                  .15s;
+$a-time:                        .4s;
+$a-micro-time:                  .25s;
 $a-long-time:                   .7s;
 
 // Fonts
@@ -10,8 +10,8 @@ $font-arial:                    Arial, Helvetica, sans-serif;
 $font-forms:                    Arial, Helvetica, sans-serif;
 
 // Colors
-$c-select-color:                #f00;
-$c-select-background:           #000;
+$c-select-color:                #fff;
+$c-select-background:           #fe4b4e;
 
 $c-text:                        #121212;
 $c-body-background:             #fff !default;
@@ -20,8 +20,8 @@ $c-placeholder-color:           #000;
 $c-placeholder-opacity:         .5;
 
 $c-sandwich-overlay:            #000;
-$c-sandwich-background:         #2b65b6;
-$c-sandwich-background-active:  #fff;
+$c-sandwich-background:         #0043b9;
+$c-sandwich-background-active:  #fe4b4e;
 
 $c-border-color:                #eee;
 

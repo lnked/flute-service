@@ -9,3 +9,23 @@
     margin-bottom: 30px;
     text-transform: uppercase;
 }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {
+    .page-header {
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {
+    .page-header {
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

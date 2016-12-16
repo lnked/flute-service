@@ -8,5 +8,5 @@
     text-decoration: none;
     display: inline-block;
     -webkit-appearance: none;
-    transition: border-color $a-time, background-color $a-time, color $a-time;
+    transition: border-color $a-time ease, background-color $a-time ease, color $a-time ease;
 }
