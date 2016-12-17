@@ -34,3 +34,11 @@
     <title itemprop="name">@@title</title>
 </head>
 <body@@if (typeof(bodyclass) !== 'undefined' && bodyclass !== ''){ class="@@bodyclass"}>
+
+<svg style="display: none;">
+    <defs>
+        <filter id="blur" x="0" y="0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+        </filter>
+    </defs>
+</svg>

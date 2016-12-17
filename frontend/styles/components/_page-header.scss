@@ -1,6 +1,6 @@
 .page-header {
     clear: both;
-    color: $c-white;
+    color: $c-tolopea;
     font-size: 3.6rem;
     line-height: .8;
     font-weight: 700;
@@ -8,6 +8,10 @@
     text-align: center;
     margin-bottom: 30px;
     text-transform: uppercase;
+
+    &.is-white {
+        color: $c-white;
+    }
 }
 
 @media only screen and (max-width: 1280px) {}
