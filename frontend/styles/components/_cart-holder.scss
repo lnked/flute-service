@@ -1,0 +1,12 @@
+.cart-holder {
+    width: 37px;
+    height: 41px;
+    color: $c-radical-red;
+
+    &__ico {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        vertical-align: middle;   
+    }
+}

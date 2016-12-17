@@ -1,13 +1,14 @@
 .navigation {
-    float: left;
-    margin-left: -11px;
+    font-size: 0;
+    margin: 0 -11px;
 
     &__wrapper {
-
+        width: 100%;
     }
 
     &__list {
-        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
     }
     
     &__item {
@@ -22,21 +23,32 @@
     &__link {
         color: $c-cobalt;
         height: 39px;
-        padding: 0 11px;
+        padding: 0 8px;
         font-size: 1.8rem;
         font-weight: 700;
-        line-height: 35px;
+        line-height: 36px;
         border-radius: 39px;
         display: inline-block;
         border: 2px solid $c-white;
         text-decoration: underline;
+        text-decoration: none;
         transition: color $a-time ease;
         
+        &__name {
+            transition: box-shadow $a-time ease;
+            box-shadow: inset 0px -1px 0px 0px lighten($c-cobalt, 5%), inset 0px -2px 0px 0px lighten($c-cobalt, 25%);
+        }
+
         &:hover {
             color: $c-radical-red;
         }
 
+        &:hover &__name {
+            box-shadow: inset 0px -1px 0px 0px lighten($c-radical-red, 5%), inset 0px -2px 0px 0px lighten($c-radical-red, 15%);
+        }
+
         &.is-current {
+            padding: 0 11px;
             border-color: $c-cobalt;
             text-decoration: none;
 
@@ -44,7 +56,12 @@
                 color: $c-cobalt;
                 cursor: default;
             }
-        }    
+        }
+
+        &.is-current &__name,
+        &.is-current:hover &__name {
+            box-shadow: none;
+        }
     }
     
 }

@@ -17,6 +17,18 @@
         left: $layout-margin;
         top: 100px;
     }
+    
+    &__hassp {
+        margin-left: 8px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__cart {
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
 
     &__slogon {
         color: $c-tolopea;
