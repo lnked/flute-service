@@ -30,18 +30,18 @@ textarea {
 .f-input,
 .f-textarea {
     width: 100%;
-    color: $c-black;
-    font-size: 1.4rem;
+    border: 0;
+    padding: 0;
+    color: $c-tolopea;
+    font-size: 1.8rem;
     font-weight: 400;
-    border-radius: 1px;
     font-family: $font-family;
-    border: 1px solid $c-dark-gray;
-    box-sizing: border-box !important;
+    background-color: transparent;
+    border-bottom: 2px solid #d2d7dc;
+    transition: border-color $a-long-time;
 
     &.error {
-        background: rgba(255, 0, 0, 0.1);
-        border-color: rgb(255, 0, 0);
-        border-color: rgba(255, 0, 0, 0.5);
+        border-color: $c-radical-red;
     }
     
     &:disabled {
@@ -52,6 +52,7 @@ textarea {
     &:focus,
     &:focus {
         outline: none;
+        border-color: $c-tolopea;
     }
 
     &::-ms-clear {

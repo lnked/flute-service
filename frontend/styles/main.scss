@@ -23,6 +23,11 @@
 @import "helpers/clearfix";
 @import "helpers/print";
 
+@import "modal/base";
+@import "modal/animation";
+
+@import "form/*";
+
 @import "layouts/*";
 
 @import "typography/*";

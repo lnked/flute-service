@@ -1,9 +1,9 @@
 .f-row {
     clear: both;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     &.is-small-margin {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     
     &__title {
@@ -41,11 +41,11 @@
             width: 50%;
 
             &:not(:last-child) {
-                padding-right: 0;
+                padding-right: 10px;
             }
 
             &:not(:first-child) {
-                padding-left: 0;
+                padding-left: 10px;
             }
         }
     }

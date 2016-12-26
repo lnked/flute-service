@@ -13,8 +13,8 @@
     @extend %button;
 
     &:hover {
-        color: $c-radical-red;
-        background-color: $c-white;
+        color: darken($c-white, 10%);
+        background-color: darken($c-radical-red, 10%);
     }
 
     &.disabled {

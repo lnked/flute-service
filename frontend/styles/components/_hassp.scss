@@ -13,10 +13,15 @@
     background-image: url(../images/hassp-ico.png);
     background-repeat: no-repeat;
     background-position: 5px 50%;
+    transition: background-color $a-time ease;
 
     &__middle {
         line-height: 1.4;
         display: inline-block;
         vertical-align: middle;
+    }
+
+    &:hover {
+        background-color: $c-cornflower-blue;
     }
 }

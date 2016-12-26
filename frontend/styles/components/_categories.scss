@@ -27,7 +27,7 @@
             position: relative;
             top: -1px;
             border: 2px solid $c-radical-red;
-            transition: border-color $a-time, color $a-time;
+            transition: border-color $a-long-time, color $a-long-time;
 
             &:hover,
             &.is-current {
@@ -40,7 +40,7 @@
             color: $c-radical-red;
             display: block;
             text-decoration: none;
-            transition: color $a-time;
+            transition: color $a-long-time;
 
             &:hover,
             &.is-current {

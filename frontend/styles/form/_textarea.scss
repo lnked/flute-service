@@ -1,11 +1,8 @@
 .f-textarea {
-    height: 80px;
-    max-height: 170px;
-    padding: 7px 10px;
+    border: 0;
+    height: 70px;
     max-width: 100%;
-    resize: vertical;
-
-    &_simple {
-        height: 87px;
-    }
+    resize: none;
+    line-height: 46px;
+    background: url(../images/textarea.png) 0 -11px repeat;
 }
