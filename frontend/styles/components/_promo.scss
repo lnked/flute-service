@@ -79,6 +79,15 @@
     .promo {
         padding-top: 35px;
         padding-bottom: 65px;
+
+        &__player {
+            &__video {
+                top: 7px;
+                left: 30px;
+                right: 31px;
+                bottom: 7px;
+            }
+        }
     }
 }
 @media only screen and (max-width: 480px) {}

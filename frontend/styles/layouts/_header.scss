@@ -11,15 +11,31 @@
 
     &__logo {
         width: 157px;
-        height: 53px;
         color: $c-header-logo;
         position: absolute;
         left: $layout-margin;
-        top: 100px;
+        top: 90px;
     }
     
+    &__navigation {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__right {
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+
+        @media (max-width: 960px) {
+            display: block;
+            margin: 0 0 10px;
+            text-align: center;
+        }
+    }
+
     &__hassp {
-        margin-left: 8px;
+        margin-left: 3px;
         display: inline-block;
         vertical-align: middle;
     }
@@ -32,43 +48,118 @@
 
     &__slogon {
         color: $c-tolopea;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         font-weight: 700;
-        line-height: 1.3333333333;
+        line-height: 0.9;
         text-transform: uppercase;
         position: absolute;
+        top: 90px;
+        left: 185px + $layout-margin;
+        
+        @media (max-width: 960px) {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__group {
+        @media (max-width: 960px) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__info {
+        position: absolute;
         top: 115px;
-        left: 205px + $layout-margin;
+        height: 47px;
+        color: #6d6973;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 47px;
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+
+        @media (max-width: 960px) {
+            position: relative;
+            left: auto;
+            right: auto;
+            top: auto;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 20px;
+        }
+
+        &__middle {
+            line-height: 1.125;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &.is-seven-years {
+            left: 220px + $layout-margin;
+            padding-left: 65px;
+            background-image: url(/projects/images/7-years.png);
+
+            @media (max-width: 960px) {
+                margin: 0 10px;
+                left: auto;
+                top: auto;
+            }
+        }
+
+        &.is-work-on-rf {
+            left: 470px + $layout-margin;
+            padding-left: 80px;
+            background-image: url(/projects/images/map-icon.png);
+
+            @media (max-width: 960px) {
+                margin: 0 10px;
+                left: auto;
+                top: auto;
+            }
+        }
     }
 
     &__contact {
         position: absolute;
         right: $layout-margin;
-        top: 95px;
+        top: 90px;
     }
 }
 
 @media only screen and (max-width: 960px) {
     .layout-header {
         height: auto;
+        text-align: center;
         
         &__wrapper {
-            padding: 20px 15px;
+            padding: 20px 15px 35px;
+        }
+        
+        &__info {
+            top: 32px;
+        }
+
+        &__right {
+            position: absolute;
+            left: 200px;
+            top: 25px;
         }
 
         &__logo {
             position: relative;
             left: auto;
             top: auto;
-            margin-bottom: 25px;
+            margin-top: 10px;
+            margin-bottom: 35px;
         }
 
-        &__navigation {
-            margin-bottom: 25px;
-        }
-    
         &__contact {
-            right: 15px;
+            position: relative;
+            right: auto;
+            top: auto;
+            left: auto;
         }
 
         &__slogon {
@@ -80,16 +171,44 @@
     }
 }
 
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 890px) {
     .layout-header {
+
+        &__slogon {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
         &__contact {
-            top: 55px;
+            position: relative;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: auto;
+            float: none;
+            text-align: center !important;
+
+            .contact__ico {
+                position: relative;
+                left: auto;
+                top: auto;
+                margin-bottom: -5px;
+            }
+
+            .contact__phone {
+                clear: none;
+                margin-left: 20px;
+                padding-left: 0;
+                display: inline-block;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 768px) {
     .layout-header {
+        text-align: center;
+
         &__contact {
             position: relative;
             right: auto;
@@ -97,7 +216,7 @@
         }
 
         &__slogon {
-            margin-bottom: 20px;
+            margin-bottom: 35px;
         }
     }
 }
@@ -107,7 +226,12 @@
         text-align: center;
 
         &__logo {
-            margin: 0 auto 20px;
+            width: 90px;
+            // margin: 0 auto 20px;
+        }
+
+        &__right {
+            left: 120px;
         }
     }
 }
@@ -118,6 +242,13 @@
 
         &__slogon {
             font-size: 1.4rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        &__info {
+            min-width: 220px;
+            text-align: left;
         }
     }
 }

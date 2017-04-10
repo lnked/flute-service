@@ -9,7 +9,8 @@ var app = app || {};
 
         config: {
             prefix: 'tmpl-modal-',
-            trigger: '.j-open-popup'
+            trigger: '.j-open-popup',
+            dismiss: '.j-close-popup'
         },
 
         prepare: function(selector)
@@ -35,6 +36,19 @@ var app = app || {};
             return selector;
         },
 
+        _close: function(modal)
+        {
+            var change = modal.find('[data-change]');
+
+            modal.removeClass('is-animate');
+            change.removeClass('is-animate');
+            
+            setTimeout(function() {
+                change.removeClass('is-open');
+                modal.removeClass('is-open');
+            }, 500);
+        },
+
         _open: function(modal)
         {
             var change = modal.find('[data-change]');
@@ -54,10 +68,18 @@ var app = app || {};
 
         bind: function()
         {
+            $('body').on('click', _this_.config.dismiss, function(e){
+                e.preventDefault();
+
+                _this_._close($(this).closest('.modal'));
+
+                return !1;
+            });
+
             $('body').on('click', _this_.config.trigger, function(e){
                 e.preventDefault();
 
-                var selector = $(this).data('target') || $(this).attr('href'),
+                var selector = $(this).data('target') || $(this).data('popup') || $(this).attr('href'),
                     modal = null;
 
                 if (document.getElementById(_this_.prepare(selector)) !== null)

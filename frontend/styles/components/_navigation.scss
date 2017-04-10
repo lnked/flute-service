@@ -72,17 +72,19 @@
     
 }
 
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 960px) {
     .navigation {
         width: 100%;
         position: fixed;
         left: 0;
         top: 0;
+        margin: 0;
         z-index: 9000;
         line-height: 1;
         background: none;
         box-shadow: none;
         visibility: hidden;
+        background-color: rgba(black, .85);
         
         &__similar {
             height: 0;

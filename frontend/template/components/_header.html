@@ -6,12 +6,8 @@
 
 <header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 	<div class="layout-header__wrapper">
-		
-		@@include('./_navigation.html', {
-			"current": "@@current"
-		})
-		
-		<a href="#" class="layout-header__logo logo" rel="home" itemprop="url" accesskey="1" data-instant>
+	
+		<a href="/projects/" class="layout-header__logo logo" rel="home" itemprop="url" accesskey="1" data-instant>
 			<meta itemprop="name" content="Интернет-магазин Flute service">
 			
 			<svg class="logo__image" role="image">
@@ -19,14 +15,45 @@
 			</svg>
 		</a>
 
-		<div class="layout-header__slogon">Профессиональное оснащение сегмента HoReCa</div>
+		@@include('./_navigation.html', {
+			"current": "@@current"
+		})
+        
+		<div class="layout-header__right">
+	        <a href="#" class="layout-header__hassp hassp">
+	            <span class="hassp__middle">Сертификация и внедрение ХАССП</span>
+	        </a>
+
+	        <a href="#" class="layout-header__cart cart-holder">
+	            <svg class="cart-holder__ico" role="image">
+	                <use xlink:href="#shopping-cart"/>
+	            </svg>
+	        </a>
+       	</div>
 
 		<div class="layout-header__contact contact">
 			<svg class="contact__ico" role="image"><use xlink:href="#phone"/></svg>
-			
-			<a href="" class="contact__phone">8 (928) 884 82 92</a>
-			<a href="" class="contact__phone">8 (861) 292 82 92</a>
+
+			<a href="tel:8-928-884-82-92" class="contact__phone">8 (928) 884 82 92</a>
+			<a href="tel:8-861-292-82-92" class="contact__phone">8 (861) 292 82 92</a>
 			<b class="contact__adddress">г. Краснодар, ул. Рашпилевская 315/1</b>
 		</div>
+
+		<div class="layout-header__slogon">проектирование и дизайн ресторанов, отелей, магазинов</div>
+
+		<div class="layout-header__group">
+			<div class="layout-header__info is-seven-years">
+				<div class="layout-header__info__middle">
+					Проектируем и<br>оснащаем более 7 лет
+				</div>
+			</div>
+		
+			<div class="layout-header__info is-work-on-rf">
+				<div class="layout-header__info__middle">
+					Работаем по<br>всей России
+				</div>
+			</div>
+		</div>
+
 	</div>
 </header>

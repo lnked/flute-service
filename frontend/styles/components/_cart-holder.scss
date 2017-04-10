@@ -1,12 +1,25 @@
 .cart-holder {
     width: 37px;
-    height: 41px;
     color: $c-radical-red;
+    position: relative;
 
     &__ico {
         max-width: 100%;
         max-height: 100%;
         display: inline-block;
-        vertical-align: middle;   
+        vertical-align: middle;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 110.8108108108%;
+    }
+
+    @media only screen and (max-width: 568px) {
+        width: 28px;
     }
 }

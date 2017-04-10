@@ -1,7 +1,7 @@
 const src = './frontend/';
 const app = './public_html/';
-const markup = 'markup/';
-const mainPage = 'projects.html';
+const markup = '/';
+const mainPage = 'projects/index.html';
 
 module.exports.app  = app;
 
@@ -16,23 +16,67 @@ module.exports.tasks = {
     'scripts': {
         path: src + 'scripts',
         ignore: '!' + src + 'scripts/**/!_*.*',
-        app: app + 'js',
+        app: app + 'projects/js',
         bower: {
             config: './.bowerrc',
             path: src + 'vendors',
-            json: './bower.json'
+            json: './bower.json',
+            overrides: {
+                "jquery": {
+                    "main": "dist/jquery.min.js"
+                },
+                "axios": {
+                    "main": "dist/axios.min.js"
+                },
+                "mousetrap": {
+                    "main": "mousetrap.min.js"
+                },
+                "gsap": {
+                    "main": [
+                        "src/minified/TweenLite.min.js",
+                        "src/minified/TimelineLite.min.js"
+                    ]
+                },
+                "svg4everybody": {
+                    "main": "dist/svg4everybody.min.js"
+                },
+                "Template7": {
+                    "main": "dist/template7.min.js"
+                },
+                "react": {
+                    "main": [
+                        "react.min.js",
+                        "react-dom.min.js"
+                    ]
+                },
+                "zepto": {
+                    "main": "zepto.min.js"
+                },
+                "store-js": {
+                    "main": "store.min.js"
+                },
+                "cookie": {
+                    "main": "cookie.min.js"
+                },
+                "isotope": {
+                    "main": "dist/isotope.pkgd.min.js"
+                },
+                "reflux": {
+                    "main": "dist/reflux.min.js"
+                }
+            }
         }
     },
 
     'styles': {
         path: [src + 'styles'],
         src: [src + 'styles/*.scss', src + 'styles/**/*.scss', '!' + src + 'styles/_*.*', '!' + src + 'styles/**/_*.*'],
-        app: app + 'css'
+        app: app + 'projects/css'
     },
 
     'images': {
         src: src + 'images/**/*.{gif,svg,png,jpg,jpeg,webp}',
-        app: app + 'images'
+        app: app + 'projects/images'
     },
 
     'files': {
@@ -62,7 +106,7 @@ module.exports.tasks = {
 
     'favicon': {
         src: src + 'favicon/**/*.*',
-        app: app + 'favicon'
+        app: app + 'projects/favicon'
     },
     
     'svgstore': {
